@@ -1,6 +1,5 @@
 package br.senac.tads.dsw.dados_pessoais;
 
-   import br.senac.tads.dsw.dados_pessoais.validacao.SenhasIguais;
    import jakarta.validation.constraints.Email;
    import jakarta.validation.constraints.NotBlank;
    import jakarta.validation.constraints.NotNull;
@@ -9,7 +8,7 @@ package br.senac.tads.dsw.dados_pessoais;
    import java.time.LocalDate;
    import java.util.List;
 
-public class Pessoa {
+public class PessoaDto {
 
     private Integer id;
 
@@ -37,7 +36,7 @@ public class Pessoa {
     private String senhaRepeticao;
     private List<String> conhecimentos;
 
-    public Pessoa(Integer id, String username, String nome, String email, String telefone, LocalDate dataNascimento) {
+    public PessoaDto(Integer id, String username, String nome, String email, String telefone, LocalDate dataNascimento) {
         this.id = id;
         this.username = username;
         this.nome = nome;

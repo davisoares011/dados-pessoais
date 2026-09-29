@@ -15,9 +15,9 @@ import jakarta.validation.Payload;
 @Constraint(validatedBy = SenhasIguaisValidator.class)
 public @interface SenhasIguais {
 
-	String message () default "A senha e repetição devem ser iguais";
+	String message() default "A senha e repetição devem ser iguais";
 
 	Class<?>[] groups() default {};
 
-	Class<? extends Payload>[] payload() default {};
+	Class<? extends Payload> [] payload() default{};
 }
